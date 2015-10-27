@@ -18,11 +18,6 @@
 
 	public function file(){
 
-		$data = array(
-			"contents" => "dekrip_file",
-		);
-		$this->load->view("dashboard",$data);
-
 		$dekrip = $this->input->post("dekripfile");
         $password = $this->input->post("pass");
 
@@ -74,17 +69,19 @@
 
                     fclose($fsrcobjc);
                     exit(0);
-                    $success = "Dekripsi File Berhasil";
+                    $data["success"] = "Dekripsi File Berhasil";
 
                 } else {
-                $alert = "Password Salah"; }
+                $data["alert"] = "Password Salah"; }
                 } else {
-                $alert = "bukan file enkrip"; }
+                $data["alert"] = "bukan file enkrip"; }
             } else {
-            $alert = "error"; }
+            $data["alert"] = "error"; }
             }
         //}
         }
+        $data["contents"] = "dekrip_file";
+		$this->load->view("dashboard",$data);
 	}
 
     public function text(){

@@ -22,7 +22,7 @@
         <a href="#"><b>Aplikasi</b> Enkripsi</a>
       </div><!-- /.login-logo -->
       <div class="login-box-body">
-        <p class="login-box-msg">Sign in to start your session</p>
+        <p class="login-box-msg">Login untuk memulai sesi</p>
         <form id="loginform" role="form" method="post" action="<?php echo base_url()."login/ceklogin"; ?>">
           <div class="form-group has-feedback">
             <input id="login-username" type="text" class="form-control" name="username" placeholder="username">
@@ -34,12 +34,16 @@
           </div>
           <div class="row">
             <div class="col-xs-4">
-              <button type="submit" class="btn btn-primary btn-block btn-flat">Sign In</button>
+              <button type="submit" class="btn btn-primary btn-block btn-flat">Login</button>
+            </div><!-- /.col -->
+            <div class="col-xs-4 pull-right">
+              <a href="<?php echo base_url()."registrasi"; ?>" class="btn btn-info btn-block btn-flat">Registrasi</a>
             </div><!-- /.col -->
           </div>
         </form>
         <div style="padding-top:10px; text-align:center;"  class="form-group">
         <?php echo "<label for='password' class='control-label' style='color:red'>".$this->session->flashdata('pesan')."</label>" ?>
+        <?php echo "<label for='password' class='control-label' style='color:green'>".$this->session->flashdata('sukses')."</label>" ?>
         </div>
       </div><!-- /.login-box-body -->
     </div><!-- /.login-box -->

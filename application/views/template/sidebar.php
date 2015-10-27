@@ -16,7 +16,7 @@
             <li class="header">MAIN NAVIGATION</li>
             <li <?php echo ($this->uri->segment(1)=="dashboard") ? 'class="active"' : ''; ?>><a href="<?php echo base_url()."dashboard"; ?>"><i class="fa fa-circle-o text-red"></i><span>Home</span></a></li>
             <li <?php echo ($this->uri->segment(1)=="myfiles") ? 'class="active"' : ''; ?>><a href="<?php echo base_url()."myfiles"; ?>"><i class="fa fa-circle-o text-red"></i><span>MyFiles</span></a></li>
-            <li><a href="?module=help"><i class="fa fa-circle-o text-red"></i><span>Bantuan</span></a></li>
+            <li><a href="<?php echo base_url()."bantuan"; ?>"><i class="fa fa-circle-o text-red"></i><span>Bantuan</span></a></li>
             <li class="header">MENU ENKRIPSI</li>
             <li <?php echo ($this->uri->segment(1)=="enkripsi" && $this->uri->segment(2)=="file") ? 'class="active"' : ''; ?>><a href="<?php echo base_url()."enkripsi/file"; ?>"><i class="fa fa-circle-o text-blue"></i><span>Enkripsi File</span></a></li>
 			<li <?php echo ($this->uri->segment(1)=="enkripsi" && $this->uri->segment(2)=="text") ? 'class="active"' : ''; ?>><a href="<?php echo base_url()."enkripsi/text"; ?>"><i class="fa fa-circle-o text-blue"></i>Enkripsi Text</span></a></li>
