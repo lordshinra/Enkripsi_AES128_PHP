@@ -10,8 +10,10 @@ Aplikasi ini di buat dengan pemrograman PHP menggunakan Framework Codeigniter
 Installation
 ************
 
-1.Copy ke folder xampp/htdocs
+1.Buat folder bernama Enkrip di xampp/htdocs, lalu kopi isinya ke foder tersebut
+
 2.import database
+
 3.run
 
 user: admin
