@@ -44,5 +44,5 @@ CREATE TABLE `user` (
 #
 
 /*!40000 ALTER TABLE `user` DISABLE KEYS */;
-INSERT INTO `user` VALUES (1,'admin','admin@admin.com','8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918'),(2,'reza','reza.shinra@gmail.com','8bd8b63d5cc9b9605c91427bd508db1b0e0d3d7c9c205054e57c6561334af295');
+INSERT INTO `user` VALUES (1,'admin','admin@admin.com','8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918');
 /*!40000 ALTER TABLE `user` ENABLE KEYS */;
